@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Free Time</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <center>
+        <form>
+        Select Operation:
+        <select id="mySelect">
+          <option value="Addition">Addition</option>
+          <option value="Subtraction">Subtraction</option>
+          <option value="Multiplication">Multiplication</option>
+          <option value="Division">Division</option>
+        </select>
+      </form>
+            <br><br><br><br>
+            <h3>Question</h3>
+              Number 1
+              <br>
+              <input class="btn btn-default" id="question" type="number" placeholder="Number1">
+              <br>
+              <h3>Number 2</h3>
+              <input class="btn btn-default" id="question2" type="number" placeholder="Number2">
+              <br><br><br>
+              <button class="btn btn-warning" onclick="check()">Check</button>
+              <br><br><br>
+              <h3>Answer</h3>
+              <input class="btn btn-default" id="answer" placeholder="answer">
+              <label></label>
+        </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
